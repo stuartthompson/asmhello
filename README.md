@@ -1,2 +1,12 @@
 # asmhello
 Say Hello World in assembler
+
+This simple project demonstrates how to code Hello, World in assembler.
+
+## Required Tools
+An assembler is required to compile this source to object code. This example uses nasm, the net-wide assembler.
+Install nasm using a package manager for your operating system.
+
+## Compile and Link Instructions
+The instructions to compile and link each example are included in the comments at the top of source files.
+
