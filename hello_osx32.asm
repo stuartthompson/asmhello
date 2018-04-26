@@ -14,11 +14,11 @@ _start:
 	push dword msg			; msg
 	push dword 1			; stdout
 	mov eax, 4			; sys write
-	sub esp, 4
+	sub esp, 4			; OSX system calls need "extra space"
 	int 0x80
-	add esp, 16
+	add esp, 16			; clean up the stack
 
 	push dword 0			; exit code 0
 	mov eax, 1			; sys exit
-	sub esp, 12
+	sub esp, 4			; OSX system calls need "extra space"
 	int 0x80 
