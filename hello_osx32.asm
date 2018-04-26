@@ -3,6 +3,10 @@
 ; nasm -f macho -o hello_osx32.o hello_osx32.asm
 ; ld -macosx_version_min 10.7.0 -e _start -o hello_osx32 hello_osx32.o
 
+; Note: OSX system calls need extra stack space
+; See the comments below before sys calls.
+; This comes from OSX adopting the BSD style calling convention.
+
 section .data
 	msg db "Hello, World!", 10	; "Hello, World!\n"
 
