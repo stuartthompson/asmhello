@@ -10,3 +10,5 @@ Install nasm using a package manager for your operating system.
 ## Compile and Link Instructions
 The instructions to compile and link each example are included in the comments at the top of source files.
 
+### Makefile
+This project includes a makefile. Use "make" to build the samples, "make clean" to clean.
